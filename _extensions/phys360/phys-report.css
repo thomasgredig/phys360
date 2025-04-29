@@ -1,43 +1,102 @@
-.baby-blue-background {
-  background-color: #cceeff;
-  color: #333;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+/* Main content area */
+#quarto-content {
+  background-color: #f8f9fa; /* light grey */
   padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    color: #005577;
-    margin-bottom: 1rem;
-  }
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #1a237e;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
-  p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
+/* Paragraphs */
+p {
+  color: #212121;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
-  a {
-    color: #0077aa;
-    text-decoration: none;
-    font-weight: bold;
+/* Title block */
+.quarto-title-block.default {
+  background-color: #e3f2fd; /* light baby blue */
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
 
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+.quarto-title-block.default h1,
+.quarto-title-block.default h2,
+.quarto-title-block.default h3 {
+  margin: 0.2em 0;
+  color: #0d47a1;
+}
 
-  button {
-    background-color: #0077aa;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* Sidebar */
+.sidebar.margin-sidebar {
+  background-color: #e3f2fd;
+  padding: 1rem;
+  border-radius: 6px;
+}
 
-    &:hover {
-      background-color: #005577;
-    }
-  }
+/* Main content area */
+#quarto-content {
+  background-color: #f8f9fa; /* light grey */
+  padding: 2rem;
+  /*  font-family: "Georgia", serif; */
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #1a237e;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Paragraphs */
+p {
+  color: #212121;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Figures and tables */
+figure, table {
+  margin: 2rem auto;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* Code blocks */
+pre, code {
+  background-color: #f1f1f1;
+  font-family: monospace;
+  border-radius: 4px;
+  padding: 0.4rem;
+}
+
+/* Citations */
+.citation {
+  color: #0d47a1;
+  font-style: italic;
+}
+
+/* Footer or notes */
+footer, .footnotes {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 2rem;
 }

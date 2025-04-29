@@ -2,15 +2,69 @@
 title: Final Project Report PHYS 360
 author: Thomas Gredig
 date: 2025-04-28
+
 format:
   phys360-html: default
+  html: default
 ---
+
 
 ## Introduction
 
+This proposal is to simulate the vertical motion of a tandem skydiver who jumps out of an airplane, experiences free fall, and then deploys a parachute before landing. The simulation will incorporate air resistance (drag), varying cross-sectional area (before and after parachute deployment), and changes in acceleration due to these forces. Parameters include the mass of the person jumping and/or two persons, the terminal velocity, and the drag coefficients. Other interesting elements could be the atmosphere density changes as a function of height. This system does not have an analytic solution for all conditions, especially with time-varying drag, making it an ideal candidate for numerical modeling. There is also experimental data available for comparison.
 
+## Objectives
 
-## More Information
+- Simulate position, velocity, and acceleration of a skydiver as a function of time.
+- Compare results for different parachute deployment times.
+- Investigate terminal velocity in both the free fall and parachute phases. Use different masses and conditions.
+- Explore the sensitivity of impact velocity to changes in drag coefficient, mass, and parachute area.
+- Produce plots of velocity vs. time, acceleration vs. time, and altitude vs. time.
+- Compare numerical data with realistic data collected from videos, etc. 
 
-You can learn more about controlling the appearance of PDF output here: <https://quarto.org/docs/output-formats/pdf-basics.html>
+## Model
+
+Use Newton's law with drag with the initial condition of height = 5000m and a mass of 150 kg (tandem); $\beta=2.4$.
+
+$$
+m \frac{d^2x}{dt^2} = \beta v^2 -mg
+$$
+
+```{python}
+#| fig-cap: Free fall with drag. 
+#| label: fig-freefall
+import numpy as np
+from scipy.integrate import odeint
+import matplotlib.pyplot as plt
+
+def newton_drag(y, t, m, beta):
+  g = 9.81
+  x, v = y
+  dx = v
+  dy = beta/m*v**2 - g
+  return [dx, dy]
+
+t = np.linspace(0,2000, 30_000)
+y0 = [5000, 0]
+beta = 2.4
+m = 150
+sol = odeint(newton_drag, y0, t, args=(m,beta))
+my_label = ["position","speed"]
+
+x_vec = sol.T[0]
+n_hit_ground = np.where(x_vec<0)[0][0]
+t_vec = t[:n_hit_ground]
+sol = sol[:n_hit_ground,:]
+
+fig, ax = plt.subplots(2,1, sharex=True)
+for i in range(2):
+  ax[i].plot(t_vec, sol.T[i], label=my_label[i])
+  ax[i].legend()
+ax[1].set_xlabel("time (s)")
+plt.show()
+```
+
+## Summary
+
+As shown in @fig-freefall, the terminal velocity approaches almost 25 m/s, which would be 90 km/s. The flight only takes a few minutes.
 
