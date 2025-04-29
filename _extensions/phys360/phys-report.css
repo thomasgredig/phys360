@@ -1,0 +1,43 @@
+.baby-blue-background {
+  background-color: #cceeff;
+  color: #333;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #005577;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    color: #0077aa;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    background-color: #0077aa;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #005577;
+    }
+  }
+}

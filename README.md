@@ -19,3 +19,16 @@ Install [Quarto](https://quarto.org/docs/download/), then add the Quarto templat
 ```bash
 quarto add thomasgredig/phys360
 ```
+
+Then modify the YAML header in the quarto file (.qmd) to start with:
+
+```yml
+---
+title: Final Project Report PHYS 360
+author: Thomas Gredig
+date: last-modified
+format:
+  phys360-html: default
+  phys360-pdf: default
+---
+```

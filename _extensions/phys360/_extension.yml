@@ -1,10 +1,19 @@
-title: Phys360
+title: PHYS 360
+subtitle: Final Project Report
 author: Thomas Gredig
+date-modified: last-modified
 version: 1.0.0
 quarto-required: ">=1.7.0"
+cap-location: margin
+
 contributes:
   formats:
     html:
+      theme: phys-report.scss
+      css: phys-report.css
+      smooth-scroll: true
+      email-obfuscation: javascript
+      code-fold: true
       toc: true
     pdf:
       toc: false

@@ -1,9 +1,9 @@
 ---
 title: Final Project Report PHYS 360
+author: Thomas Gredig
+date: 2025-04-28
 format:
   phys360-html: default
-author: Thomas Gredig
-date: last-modified
 ---
 
 ## Introduction

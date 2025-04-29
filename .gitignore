@@ -1,2 +1,6 @@
 .DS_Store
 .Rproj.user
+/README_files
+/template_files
+template.html
+README.html
