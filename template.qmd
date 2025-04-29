@@ -1,0 +1,16 @@
+---
+title: Final Project Report PHYS 360
+format:
+  phys360-html: default
+author: Thomas Gredig
+date: last-modified
+---
+
+## Introduction
+
+
+
+## More Information
+
+You can learn more about controlling the appearance of PDF output here: <https://quarto.org/docs/output-formats/pdf-basics.html>
+
