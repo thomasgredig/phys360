@@ -15,7 +15,14 @@ contributes:
       email-obfuscation: javascript
       code-fold: true
       toc: true
+      embed-resources: true
+
     pdf:
-      toc: false
+      toc: true
+      keep-tex: true
       include-in-header: header.tex
+      filters:
+        - footer.lua
+        - abstract-pdf.lua
+
 

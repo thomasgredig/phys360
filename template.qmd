@@ -2,10 +2,12 @@
 title: Final Project Report PHYS 360
 author: Thomas Gredig
 date: 2025-04-28
+abstract: |
+  This project models the drop of a tandem skydiver from airplane exit to landing, incorporating the effects of air resistance, variable cross-sectional area (open and closed parachute), and atmospheric density changes with altitude. The simulation tracks position, and velocity over time, accounting for different parachute deployment times and body masses. Because of time-varying drag and complex force interactions, the system lacks a general analytic solution, making it well-suited for numerical methods. Key outputs include trajectory plots with results compared to real-world data for validation.
 
 format:
   phys360-html: default
-  html: default
+  phys360-pdf: default
 ---
 
 

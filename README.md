@@ -27,6 +27,9 @@ Then modify the YAML header in the quarto file (.qmd) to start with:
 title: Final Project Report PHYS 360
 author: Thomas Gredig
 date: last-modified
+abstract: | 
+  An abstract provides a public summary of the work. This should be 
+  exactly one paragraph with about 5-7 sentences describing the work.
 format:
   phys360-html: default
   phys360-pdf: default
