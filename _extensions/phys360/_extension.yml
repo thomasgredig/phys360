@@ -20,6 +20,9 @@ contributes:
     pdf:
       toc: true
       keep-tex: true
+      echo: false
+      warning: false
+      message: false
       include-in-header: header.tex
       filters:
         - footer.lua
