@@ -1,3 +1,4 @@
-% TODO: Add custom LaTeX header directives here
+%  custom LaTeX header directives here
 
-\renewenvironment{abstract}{}{}
+\usepackage{environ}
+\RenewEnviron{abstract}{} % Discard content of abstract environment
