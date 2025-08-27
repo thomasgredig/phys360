@@ -2,11 +2,11 @@
 
 > Author: Thomas Gredig
 
-Book: Introduction to Computational Physics (**ISBN: 979-834609604-7**)
+Book: [Introduction to Computational Physics](https://www.amazon.com/Introduction-Computational-Physics-Differential-Simulations/dp/B0FL7W88TM) (**ISBN: 979-834609604-7**)
 
-<img src="./assets/book-cover-CompPhysics-Gredig.jpg" 
+[<img src="./assets/book-cover-CompPhysics-Gredig.jpg" 
   alt="Book cover for Introduction to Computational Physics by Thomas Gredig" 
-  width="240px">
+  width="240px">](https://www.amazon.com/Introduction-Computational-Physics-Differential-Simulations/dp/B0FL7W88TM)
 
 
 - [Data](data/) files for PHYS 360
